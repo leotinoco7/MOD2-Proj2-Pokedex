@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/CSS/style.css" />
+        <title>Add</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <div class="menu">
+                    <% menu.forEach((item) => { %>
+                    <a href="<%= item.link %>"><p><%= item.title %></p></a>
+                    <% }) %>
+                </div>
+            </h1>
+        </header>
+        <main>
+            <section id="cadastro">
+                <p class="title">Cadastre um pokemon</p>
+
+                <form action="/add2" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Nome: </label>
+                        </li>
+                        <li><input type="text" id="name" name="name" /></li>
+
+                        <li>
+                            <label for="desc">Descriçao: </label>
+                        </li>
+
+                        <li><input type="text" id="desc" name="desc" /></li>
+
+                        <li>
+                            <label for="type">Tipo: </label>
+                        </li>
+                        <li>
+                            <select id="cars" name="cars">
+                                <% type.forEach((type) => { %>
+                                <option value="<%= type %>"><%= type %></option>
+                                <% }) %>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="image">Imagem: </label>
+                        </li>
+                        <li><input type="text" id="image" name="image" /></li>
+                        <li>
+                            <button id="btn" type="submit">Send</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="/js/script.js"></script>
+    </body>
+</html>

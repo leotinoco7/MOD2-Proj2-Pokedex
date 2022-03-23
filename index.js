@@ -22,6 +22,10 @@ const menu = [
         title: 'ABOUT',
         link: '/about',
     },
+    {
+        title: 'DETALHES',
+        link: '/details',
+    },
 ];
 
 const pokedex = [
@@ -103,10 +107,16 @@ app.get('/about', (req, res) => {
     res.render('about', { pokedex, menu });
 });
 
+app.get('/details', (req, res) => {
+    res.render('details', { pokedex, menu });
+});
+
 app.post('/add2', (req, res) => {
     const pokemon = req.body;
     pokemon.id = pokedex.length + 1;
     pokedex.push(pokemon);
+
+    message = 'ok'
 
     res.redirect('/add');
 });

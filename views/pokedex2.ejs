@@ -19,15 +19,18 @@
         </header>
         <main>
             <div><p class="title">Pokedex</p></div>
-            <section id="cards">
+            <section>
                 <% pokedex.forEach((pokemon) => { %>
-                <div class="card">
-                    <img src="<%= pokemon.image %>" alt="" />
-                    <h2><%= pokemon.name %></h2>
-                    <p><%= pokemon.desc %></p>
-                    <p>Tipo: <%= pokemon.type %></p>
-                </div>
+                <ul>
+                    <li><%= pokemon.name %></li>
+                </ul>
                 <% }) %>
+                <div class="card">
+                    <img src="<%= pokedex[x].image %>" alt="" />
+                    <h2><%= pokedex[x].name %></h2>
+                    <p><%= pokedex[x].desc %></p>
+                    <p>Tipo: <%= pokedex[x].type %></p>
+                </div>
             </section>
         </main>
         <footer></footer>

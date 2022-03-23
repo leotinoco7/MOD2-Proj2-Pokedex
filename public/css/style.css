@@ -13,6 +13,8 @@
   src: url("../font/Pokemon Solid.ttf") format("truetype");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -34,13 +36,13 @@ h2 {
 
 header {
   background-color: navy;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 header p {
   color: white;
-  font-family: pokesolid;
-  font-size: 3rem;
+  font-family: "Quattrocento", serif;
+  font-size: 1rem;
 }
 
 header .menu {
@@ -55,7 +57,7 @@ header .menu {
 }
 
 .menu p {
-  padding: 0rem 1rem;
+  /* padding: 0rem 0.5rem; */
 }
 
 main {

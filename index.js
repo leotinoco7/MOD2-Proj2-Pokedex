@@ -48,6 +48,10 @@ const pokedex = [
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
+        height: '',
+        weight: '',
+        cat: '',
+        hab: '',
     },
     {
         id: '3',
@@ -55,6 +59,10 @@ const pokedex = [
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
+        height: '',
+        weight: '',
+        cat: '',
+        hab: '',
     },
     {
         id: '4',
@@ -62,6 +70,10 @@ const pokedex = [
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
+        height: '',
+        weight: '',
+        cat: '',
+        hab: '',
     },
     {
         id: '5',
@@ -69,6 +81,10 @@ const pokedex = [
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
+        height: '',
+        weight: '',
+        cat: '',
+        hab: '',
     },
 ];
 
@@ -136,11 +152,12 @@ app.post('/create', (req, res) => {
 });
 
 app.get("/update/:id", (req, res) => {
-    res.send('ola');
     const id = +req.params.id;
 
-    pokedex.filter(Boolean).find(pokemon => pokemon.id === id);
-})
+    const pokemon = pokedex.find(pokemon => pokemon.id === id);
+    
+    res.send(pokemon);  
+});
 
 app.listen(port, () =>
     console.log(`Servidor rodando em http://localhost:${port}`),

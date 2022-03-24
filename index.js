@@ -128,6 +128,10 @@ app.post('/add2', (req, res) => {
 
     message = `${pokemon.name} foi cadastrado na Pokédex com sucesso.`;
 
+    setTimeout(() => {
+        message = '';
+    }, 1000);
+
     res.redirect('/add');
 });
 

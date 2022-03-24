@@ -5,6 +5,8 @@ let x = 0;
 
 const port = 3000;
 
+let message = '';
+
 const menu = [
     {
         title: 'HOME',
@@ -100,7 +102,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/add', (req, res) => {
-    res.render('add', { pokedex, menu, type });
+    res.render('add', { pokedex, menu, type, message });
+
+    setTimeout(() => {
+        message = '';
+    }, 1000);
 });
 
 app.get('/pokedex', (req, res) => {
@@ -120,7 +126,7 @@ app.post('/add2', (req, res) => {
     pokemon.id = pokedex.length + 1;
     pokedex.push(pokemon);
 
-    message = 'ok'
+    message = `${pokemon.nome} foi cadastrado na Pokédex com sucesso.`;
 
     res.redirect('/add');
 });

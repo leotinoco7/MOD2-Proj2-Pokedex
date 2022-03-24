@@ -106,7 +106,7 @@ app.get('/add', (req, res) => {
 
     setTimeout(() => {
         message = '';
-    }, 1000);
+    }, 5000);
 });
 
 app.get('/pokedex', (req, res) => {
@@ -130,10 +130,17 @@ app.post('/create', (req, res) => {
 
     setTimeout(() => {
         message = '';
-    }, 1000);
+    }, 5000);
 
     res.redirect('/add');
 });
+
+app.get("/update/:id", (req, res) => {
+    res.send('ola');
+    const id = +req.params.id;
+
+    pokedex.filter(Boolean).find(pokemon => pokemon.id === id);
+})
 
 app.listen(port, () =>
     console.log(`Servidor rodando em http://localhost:${port}`),

@@ -121,7 +121,7 @@ app.get('/details', (req, res) => {
     res.render('details', { pokedex, menu });
 });
 
-app.post('/add2', (req, res) => {
+app.post('/create', (req, res) => {
     const pokemon = req.body;
     pokemon.id = pokedex.length + 1;
     pokedex.push(pokemon);

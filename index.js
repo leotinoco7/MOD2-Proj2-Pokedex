@@ -35,6 +35,10 @@ const pokedex = [
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
+        height: '',
+        weight: '',
+        cat: '',
+        hab: '',
     },
     {
         id: '2',

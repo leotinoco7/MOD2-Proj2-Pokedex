@@ -126,7 +126,7 @@ app.post('/add2', (req, res) => {
     pokemon.id = pokedex.length + 1;
     pokedex.push(pokemon);
 
-    message = `${pokemon.nome} foi cadastrado na Pokédex com sucesso.`;
+    message = `${pokemon.nome[pokedex.length - 1]} foi cadastrado na Pokédex com sucesso.`;
 
     res.redirect('/add');
 });

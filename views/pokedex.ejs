@@ -23,7 +23,7 @@
                 <% pokedex.forEach((pokemon) => { %>
                 <div class="card">
                     <img src="<%= pokemon.image %>" alt="" />
-                    <h2><%= pokemon.name %></h2>
+                    <h2><%= pokemon.id %> - <%= pokemon.name %></h2>
                     <p><%= pokemon.desc %></p>
                     <p>Tipo: <%= pokemon.type %></p>
                 </div>

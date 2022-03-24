@@ -30,7 +30,7 @@ const menu = [
 
 const pokedex = [
     {
-        id: '4',
+        id: '1',
         name: 'Charmander',
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
@@ -38,28 +38,28 @@ const pokedex = [
     },
     {
         id: '2',
-        name: 'Charmander2',
+        name: 'Charmander',
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
     },
     {
         id: '3',
-        name: 'Charmander3',
+        name: 'Charmander',
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
     },
     {
         id: '4',
-        name: 'Charmander4',
+        name: 'Charmander',
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
     },
     {
         id: '5',
-        name: 'Charmander5',
+        name: 'Charmander',
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',

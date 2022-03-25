@@ -25,8 +25,8 @@
                     <img src="<%= pokemon.image %>" alt="" />
                     <h2><%= pokemon.id %> - <%= pokemon.name %></h2>
                     <p><%= pokemon.desc %></p>
-                    <p>Tipo: <%= pokemon.type %></p>
-                    <a href="/detalhes/<%= pokedex.indexOf(pokemon) %>"><button id="btn2">+ Detalhes</button></div></a>
+                    <p><b>Tipo:</b> <%= pokemon.type %></p>
+                    <div class="padd"><a href="/detalhes/<%= pokedex.indexOf(pokemon) %>"><button id="btn2">+ Detalhes</button></div></a>
                 </div>
                 <% }) %>
             </section>

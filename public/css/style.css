@@ -91,6 +91,11 @@ section#cards div.card img {
 
 section#cards div.card h2 {
   margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+section#cards div.card p {
+  padding: 0.5rem;
 }
 
 section#cadastro {
@@ -116,6 +121,10 @@ section#cadastro select {
 
 section#cadastro select {
   width: 52%;
+}
+
+.padd {
+  /* padding: 1rem; */
 }
 
 section#cadastro form label {
@@ -147,6 +156,7 @@ section#cadastro form button,
 
 #btn2 {
   width: 15%;
+  padding: 0.3rem;
 }
 
 .centralizar {

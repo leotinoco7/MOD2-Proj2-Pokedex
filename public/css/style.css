@@ -94,7 +94,10 @@ section#cards div.card h2 {
   padding: 0.5rem;
 }
 
-section#cards div.card p,
+section#cards div.card p {
+  padding: 0.5rem;
+}
+
 .padd {
   margin-left: 0.5rem;
 }

@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   font-family: pokegb;
+  font-size: 1.5rem;
 }
 
 body {
@@ -44,7 +45,6 @@ header {
     rgba(38, 34, 180, 1) 86%,
     rgba(45, 42, 201, 1) 100%
   );
-  padding: 0.5rem;
 }
 
 header p {
@@ -53,23 +53,20 @@ header p {
   font-size: 1rem;
 }
 
-header .menu {
+.menu {
+  overflow: hidden;
 }
 
-header .menu ul {
-  text-align: left;
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  flex-wrap: wrap;
+.menu a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-header .menu ul li {
-  margin: 0.5rem 0rem 0.5rem 1rem;
-  list-style-type: none;
-}
-
-header .menu ul li a:hover {
+.menu a:hover {
   background-color: black;
 }
 
@@ -149,9 +146,6 @@ section#cadastro form label {
   text-align: center;
   font-size: 3rem;
   color: black;
-}
-
-p {
 }
 
 section#cadastro form button,

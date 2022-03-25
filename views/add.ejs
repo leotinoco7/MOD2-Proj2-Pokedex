@@ -16,11 +16,11 @@
             <% } %>
         <header>
             <h1>
-                <nav><div class="menu">
-                    <ul><% menu.forEach((item) => { %>
-                    <li><a href="<%= item.link %>"><p><%= item.title %></p></a></li>
+                <div class="menu">
+                    <% menu.forEach((item) => { %>
+                    <a href="<%= item.link %>"><%= item.title %></a>
                     <% }) %>
-                </ul></div></nav>
+                </div>
             </h1>
         </header>
         <main>

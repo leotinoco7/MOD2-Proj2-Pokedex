@@ -57,7 +57,7 @@ header .menu {
 }
 
 .menu p {
-  /* padding: 0rem 0.5rem; */
+  /* padding: 0.5rem; */
 }
 
 main {
@@ -94,8 +94,9 @@ section#cards div.card h2 {
   padding: 0.5rem;
 }
 
-section#cards div.card p {
-  padding: 0.5rem;
+section#cards div.card p,
+.padd {
+  margin-left: 0.5rem;
 }
 
 section#cadastro {
@@ -121,10 +122,6 @@ section#cadastro select {
 
 section#cadastro select {
   width: 52%;
-}
-
-.padd {
-  /* padding: 1rem; */
 }
 
 section#cadastro form label {

@@ -114,6 +114,10 @@ section#cadastro select {
   border: solid 1px navy;
 }
 
+section#cadastro select {
+  width: 52%;
+}
+
 section#cadastro form label {
   margin: 0.3rem;
 }

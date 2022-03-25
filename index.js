@@ -6,8 +6,6 @@ let x = 0;
 const port = 3000;
 
 let message = '';
-let pokemon = undefined;
-
 
 const menu = [
     {
@@ -26,10 +24,6 @@ const menu = [
         title: 'ABOUT',
         link: '/about',
     },
-    {
-        title: 'DETALHES',
-        link: '/details',
-    },
 ];
 
 const pokedex = [
@@ -39,10 +33,10 @@ const pokedex = [
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
-        height: '',
-        weight: '',
-        cat: '',
-        hab: '',
+        height: 'a',
+        weight: 'a',
+        cat: 'a',
+        hab: 'a',
     },
     {
         id: '2',
@@ -50,10 +44,10 @@ const pokedex = [
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
-        height: '',
-        weight: '',
-        cat: '',
-        hab: '',
+        height: 'a',
+        weight: 'a',
+        cat: 'a',
+        hab: 'a',
     },
     {
         id: '3',
@@ -61,10 +55,10 @@ const pokedex = [
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
-        height: '',
-        weight: '',
-        cat: '',
-        hab: '',
+        height: 'a',
+        weight: 'a',
+        cat: 'a',
+        hab: 'a',
     },
     {
         id: '4',
@@ -72,10 +66,10 @@ const pokedex = [
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
-        height: '',
-        weight: '',
-        cat: '',
-        hab: '',
+        height: 'a',
+        weight: 'a',
+        cat: 'a',
+        hab: 'a',
     },
     {
         id: '5',
@@ -83,10 +77,10 @@ const pokedex = [
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
         desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
         type: 'Fire',
-        height: '',
-        weight: '',
-        cat: '',
-        hab: '',
+        height: 'a',
+        weight: 'a',
+        cat: 'a',
+        hab: 'a',
     },
 ];
 
@@ -135,9 +129,6 @@ app.get('/about', (req, res) => {
     res.render('about', { pokedex, menu });
 });
 
-app.get('/details', (req, res) => {
-    res.render('details', { pokedex, menu });
-});
 
 app.post('/create', (req, res) => {
     const pokemon = req.body;
@@ -153,15 +144,15 @@ app.post('/create', (req, res) => {
     res.redirect('/add');
 });
 
-// app.get("/update/:id", (req, res) => {
-//     const id = +req.params.id - 1;
-//     const newPokemon = req.body;
-//     newPokemon.id = id + 1;
-//      pokedex[id] = newPokemon;
-//     pokemon = undefined;
-    
-// });
+app.get("/detalhes/:id", (req, res) => {
+    const id = +req.params.id - 1;
+    res.redirect("/details");
+  });
 
-app.listen(port, () =>
+  app.get('/details', (req, res) => {
+    res.render('details', { pokedex, menu, id });
+});
+
+  app.listen(port, () =>
     console.log(`Servidor rodando em http://localhost:${port}`),
 );

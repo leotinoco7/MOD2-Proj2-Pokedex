@@ -121,7 +121,7 @@ app.get('/add', (req, res) => {
 });
 
 app.get('/pokedex', (req, res) => {
-    res.render('pokedex', { pokedex, menu });
+    res.render('pokedex', { pokedex, menu, id });
 });
 
 app.get('/about', (req, res) => {

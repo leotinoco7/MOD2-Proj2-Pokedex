@@ -145,8 +145,13 @@ app.post('/create', (req, res) => {
 
 app.get("/detalhes/:id", (req, res) => {
     const id = req.params.id;
-    res.render('detalhesp', { pokedex, menu, id });
+    // res.render('detalhesp', { pokedex, menu, id });
   });
+
+  app.get('/detalhesp', (req, res) => {
+    res.render('detalhesp', { pokedex, menu, id });
+});
+
 
 app.get("/delete/:id", (req, res) => {
     const id = req.params.id;

@@ -8,11 +8,11 @@ let message = '';
 
 const menu = [
     {
-        title: 'HOME',
+        title: 'INÍCIO',
         link: '/',
     },
     {
-        title: 'ADD',
+        title: 'ADICIONAR POKÉMON',
         link: '/add',
     },
     {

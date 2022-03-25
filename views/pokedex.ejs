@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/CSS/style.css" />
-        <link rel="stylesheet" href="/CSS/w3.css" />
         <title>Pokédex</title>
     </head>
     <body>
@@ -27,16 +26,14 @@
                     <h2><%= pokemon.id %> - <%= pokemon.name %></h2>
                     <p><%= pokemon.desc %></p>
                     <p><b>Tipo:</b> <%= pokemon.type %></p>
-                    <div class="w3-container">
-                        <h2>W3.CSS Modal</h2>
-                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+                    <div class="padd">
+                        <button onclick="document.getElementById('id01').style.display='block'" id="btn2">+ Detalhes</button>
                       
-                        <div id="id01" class="w3-modal">
-                          <div class="w3-modal-content">
+                        <div id="id01" class="modal">
+                          <div class="modal-content">
                             <div class="w3-container">
-                              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                              <p>Some text. Some text. Some text.</p>
-                              <p>Some text. Some text. Some text.</p>
+                                <a href="/detalhes/<%= pokedex.indexOf(pokemon) %>"><span onclick="document.getElementById('id01').style.display='none'" class="button3 display-topright">&times;</span></a>
+                                <iframe src="/detalhes/<%= pokedex.indexOf(pokemon) %>" width="600" height="1000" style="border:0;"></iframe>
                             </div>
                           </div>
                         </div>

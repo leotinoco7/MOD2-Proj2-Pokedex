@@ -133,7 +133,7 @@ p {
 }
 
 section#cadastro form button,
-.btn {
+#btn {
   margin-top: 1rem;
   width: 25%;
   padding: 0.5rem;
@@ -144,8 +144,17 @@ section#cadastro form button,
   transition: 0.5s;
 }
 
+#btn {
+  width: 15%;
+}
+
+.centralizar {
+  align-items: center;
+  text-align: center;
+}
+
 section#cadastro form button:hover,
-.btn:hover {
+#btn:hover {
   background-color: darkgrey;
 }
 

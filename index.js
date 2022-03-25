@@ -5,6 +5,8 @@ let x = 0;
 
 const port = 3000;
 
+var id = ""
+
 let message = '';
 
 const menu = [
@@ -145,7 +147,7 @@ app.post('/create', (req, res) => {
 });
 
 app.get("/detalhes/:id", (req, res) => {
-    const id = +req.params.id - 1;
+    var id = +req.params.id - 1;
     res.redirect("/details");
   });
 

@@ -159,6 +159,7 @@ section#cadastro form button:hover,
 }
 
 a {
+  text-decoration: none;
 }
 
 menu a:hover {

@@ -195,6 +195,11 @@ a:visited {
   text-decoration: none;
 }
 
+.centralizar {
+  text-align: center;
+  align-items: center;
+}
+
 section#message {
   padding: 1.5rem;
   background-color: rgb(38, 0, 126);

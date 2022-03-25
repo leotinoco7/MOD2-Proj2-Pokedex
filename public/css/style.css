@@ -22,6 +22,10 @@
 }
 
 body {
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 h1 {

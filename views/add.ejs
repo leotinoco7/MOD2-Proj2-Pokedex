@@ -16,11 +16,11 @@
             <% } %>
         <header>
             <h1>
-                <div class="menu">
-                    <% menu.forEach((item) => { %>
-                    <a href="<%= item.link %>"><p><%= item.title %></p></a>
+                <nav><div class="menu">
+                    <ul><% menu.forEach((item) => { %>
+                    <li><a href="<%= item.link %>"><p><%= item.title %></p></a></li>
                     <% }) %>
-                </div>
+                </ul></div></nav>
             </h1>
         </header>
         <main>
@@ -70,7 +70,7 @@
                             <label for="hab">Habilidade: </label></li>
                         <li><input type="text" id="hab" name="hab" required/></li>
                                             <li>
-                            <button id="btn" type="submit">Send</button>
+                            <button id="btn" type="submit">Enviar</button>
                         </li>
                     </ul>
                 </form>

@@ -156,7 +156,6 @@ app.get("/update/:id", (req, res) => {
 
     const pokemon = pokedex.find(pokemon => pokemon.id === id);
     
-    console.log(pokemon)
     res.send(pokemon);  
 });
 

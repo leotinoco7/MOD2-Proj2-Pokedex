@@ -158,8 +158,7 @@ section#cadastro form button,
   background-color: lightgray;
   border: solid 1px black;
   transition: 0.5s;
-  border-radius: 10px 20px;
-  border: 1px solid;
+  border-radius: 20px;
   display: block;
   border-color: #999 #000 #000 #999
 }

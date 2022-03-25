@@ -35,11 +35,14 @@ h2 {
 }
 
 header {
-  background: rgb(2, 0, 36);
+  background: rgb(4, 0, 78);
   background: linear-gradient(
     132deg,
-    rgba(2, 0, 36, 1) 60%,
-    rgba(3, 0, 180, 1) 100%
+    rgba(4, 0, 78, 1) 51%,
+    rgba(11, 7, 116, 1) 62%,
+    rgba(16, 12, 139, 1) 72%,
+    rgba(38, 34, 180, 1) 86%,
+    rgba(45, 42, 201, 1) 100%
   );
   padding: 0.5rem;
 }
@@ -63,7 +66,6 @@ header .menu ul {
 
 header .menu ul li {
   margin: 0.5rem 0rem 0.5rem 1rem;
-  border-right: 1px solid black;
   list-style-type: none;
 }
 

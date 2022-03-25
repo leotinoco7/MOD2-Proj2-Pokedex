@@ -250,10 +250,6 @@ span#close:hover {
   width: 600px;
 }
 
-.container {
-  padding: 0.01em 16px;
-}
-
 .container:after,
 .container:before {
   content: "";

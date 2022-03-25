@@ -6,6 +6,8 @@ let x = 0;
 const port = 3000;
 
 let message = '';
+let pokemon = undefined;
+
 
 const menu = [
     {
@@ -151,13 +153,14 @@ app.post('/create', (req, res) => {
     res.redirect('/add');
 });
 
-app.get("/update/:id", (req, res) => {
-    const id = +req.params.id;
-
-    const pokemon = pokedex.find(pokemon => pokemon.id === id);
+// app.get("/update/:id", (req, res) => {
+//     const id = +req.params.id - 1;
+//     const newPokemon = req.body;
+//     newPokemon.id = id + 1;
+//      pokedex[id] = newPokemon;
+//     pokemon = undefined;
     
-    res.send(pokemon);  
-});
+// });
 
 app.listen(port, () =>
     console.log(`Servidor rodando em http://localhost:${port}`),

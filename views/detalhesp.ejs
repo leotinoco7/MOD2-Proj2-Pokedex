@@ -19,10 +19,17 @@
         </header>
         <main>
             <div><p class="title">Pokedex</p></div>
+            <button class="btn" onclick="history.back()">Go Back</button>
             <section id="cards">
                 <div class="card">
-                    <img src="<%= pokemons.image %>" alt="" />
-                    <h2><%= pokemons.id %> - <%= pokemons.name %></h2>
+                    <img src="<%= pokedex[id].image %>" alt="" />
+                    <h2><%= pokedex[id].id %> - <%= pokedex[id].name %></h2>
+                    <p><%= pokedex[id].desc %></p>
+                    <p>Tipo: <%= pokedex[id].type %></p>
+                    <p>Altura: <%= pokedex[id].height %></p>
+                    <p>Peso: <%= pokedex[id].weight %></p>
+                    <p>Categoria: <%= pokedex[id].cat %></p>
+                    <p>Habilidade: <%= pokedex[id].hab %></p>
                 </div>
             </section>
         </main>

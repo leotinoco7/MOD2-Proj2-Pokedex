@@ -1,13 +1,10 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-let x = 0;
 
 const port = 3000;
 
 let message = '';
-let pokemon = undefined;
-let pokemons = undefined;
 
 const menu = [
     {
@@ -147,14 +144,10 @@ app.post('/create', (req, res) => {
 });
 
 app.get("/detalhes/:id", (req, res) => {
-    const index = req.params.id;
-    const pokemons = pokedex[index]
-    res.render("/detalhes", {menu, pokedex, pokemon: pokemons});
+    const id = req.params.id;
+    res.render('detalhesp', { pokedex, menu, id });
   });
 
-//   app.get("/detalhes", (req, res) => {
-//     res.render("detalhes", { pokedex, menu, pokemon: pokemons });
-// });
 
   app.listen(port, () =>
     console.log(`Servidor rodando em http://localhost:${port}`),

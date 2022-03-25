@@ -115,7 +115,7 @@ section#cadastro select {
 }
 
 section#cadastro select {
-  width: 51%;
+  width: 52%;
 }
 
 section#cadastro form label {
@@ -132,7 +132,8 @@ section#cadastro form label {
 p {
 }
 
-section#cadastro form button {
+section#cadastro form button,
+.btn {
   margin-top: 1rem;
   width: 25%;
   padding: 0.5rem;
@@ -143,7 +144,8 @@ section#cadastro form button {
   transition: 0.5s;
 }
 
-section#cadastro form button:hover {
+section#cadastro form button:hover,
+.btn:hover {
   background-color: darkgrey;
 }
 

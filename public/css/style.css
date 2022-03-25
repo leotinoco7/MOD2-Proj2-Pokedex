@@ -158,9 +158,15 @@ section#cadastro form button,
   background-color: lightgray;
   border: solid 1px black;
   transition: 0.5s;
+  border-radius: 10px 20px;
+  border: 1px solid;
+  display: block;
+  border-color: #999 #000 #000 #999
 }
 
 .centralizar {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
 }
@@ -174,7 +180,11 @@ section#cadastro form button,
 section#cadastro form button:hover,
 #btn2:hover,
 #btn:hover {
+  position: relative;
   background-color: darkgrey;
+  top: 1px;
+	left: 1px;
+  border-color: #000 #999 #999 #000;
 }
 
 #btn2 {

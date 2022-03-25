@@ -275,4 +275,45 @@ span#close:hover {
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
+  
+}
+.card{
+  border: 10px ridge transparent;
+  animation: cores 10s ease infinite;
+}
+
+@keyframes cores  {
+ 0%{
+  border-color: #04004e;
+ }
+ 17%{
+  border-color:#0b0774;
+ }
+ 34%{
+  border-color: #100c8b;
+ }
+ 51%{
+  border-color: #2622b4;
+ }
+ 68%{
+  border-color: #2d2ac9;
+ }
+ 75%{
+  border-color: #2622b4;
+ }
+  92%{
+  border-color: #100c8b;
+ } 
+ 100%{
+  border-color: #0b0774;
+ } 
+/* 80%{
+  border-color: #04004e;
+ } 
+ 90%{
+  border-color: #100c8b;
+ } 
+ 100%{
+  border-color: #100c8b;
+ } */
 }

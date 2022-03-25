@@ -35,7 +35,12 @@ h2 {
 }
 
 header {
-  background-color: navy;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    132deg,
+    rgba(2, 0, 36, 1) 60%,
+    rgba(3, 0, 180, 1) 100%
+  );
   padding: 0.5rem;
 }
 
@@ -46,18 +51,23 @@ header p {
 }
 
 header .menu {
+}
+
+header .menu ul {
   text-align: left;
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
-  margin-top: 0.5rem;
-  padding: 0.5rem;
-  gap: 0.5rem 1rem;
 }
 
-.menu p {
-  /* padding: 0.5rem; */
+header .menu ul li {
+  margin: 0.5rem 0rem 0.5rem 1rem;
+  border-right: 1px solid black;
+  list-style-type: none;
+}
+
+header .menu ul li:after {
 }
 
 main {
@@ -159,7 +169,7 @@ section#cadastro form button,
   padding: 0.3rem;
 }
 
-.centralizar {
+lizar {
   align-items: center;
   text-align: center;
 }

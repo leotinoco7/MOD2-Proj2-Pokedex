@@ -133,7 +133,8 @@ p {
 }
 
 section#cadastro form button,
-#btn {
+#btn,
+#btn2 {
   margin-top: 1rem;
   width: 25%;
   padding: 0.5rem;
@@ -144,7 +145,7 @@ section#cadastro form button,
   transition: 0.5s;
 }
 
-#btn {
+#btn2 {
   width: 15%;
 }
 
@@ -154,10 +155,14 @@ section#cadastro form button,
 }
 
 section#cadastro form button:hover,
-#btn:hover {
+#btn:hover,
+#btn2:hover {
   background-color: darkgrey;
 }
 
+#btn2 {
+  width: 50%;
+}
 a {
   text-decoration: none;
 }

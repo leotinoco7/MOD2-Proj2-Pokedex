@@ -5,32 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/CSS/style.css" />
-        <title>pokedex</title>
+        <title>Pokédex</title>
     </head>
     <body>
         <header>
             <h1>
                 <div class="menu">
                     <% menu.forEach((item) => { %>
-                    <a href="<%= item.link %>"><p><%= item.title %></p></a>
+                    <a href="<%= item.link %>"><%= item.title %></a>
                     <% }) %>
                 </div>
             </h1>
         </header>
         <main>
             <div><p class="title">Pokedex</p></div>
-            <section>
+            <section id="cards">
                 <% pokedex.forEach((pokemon) => { %>
-                <ul>
-                    <li><%= pokemon.name %></li>
-                </ul>
-                <% }) %>
                 <div class="card">
-                    <img src="<%= pokedex[x].image %>" alt="" />
-                    <h2><%= pokedex[x].name %></h2>
-                    <p><%= pokedex[x].desc %></p>
-                    <p>Tipo: <%= pokedex[x].type %></p>
+                    <img src="<%= pokemon.image %>" alt="" />
+                    <h2><%= pokemon.id %> - <%= pokemon.name %></h2>
+                    <p><%= pokemon.desc %></p>
+                    <p><b>Tipo:</b> <%= pokemon.type %></p>
+                    <div class="padd"><a href="/detalhes/<%= pokedex.indexOf(pokemon) %>"><button id="btn2">+ Detalhes</button></div></a>
+                    <div class="padd"><a href="/delete/<%= pokedex.indexOf(pokemon) %>"><button id="btn2">- Apagar</button></div></a>
                 </div>
+                <% }) %>
             </section>
         </main>
         <footer></footer>

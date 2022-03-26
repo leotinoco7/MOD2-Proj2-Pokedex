@@ -9,20 +9,10 @@
     </head>
     <body>
         <header>
-            <h1>
-                <div class="menu">
-                    <% menu.forEach((item) => { %>
-                    <a href="<%= item.link %>"><%= item.title %></a>
-                    <% }) %>
-                </div>
-            </h1>
         </header>
         <main>
-            <div><p class="title">Detalhes:</p></div>
-            <div class="centralizar"><button id="btn" onclick="history.back()"><p>Voltar</p></button></div>
             <section id="cards">
                 <div class="card">
-                    <img src="<%= pokedex[id].image %>" alt="" />
                     <h2><%= pokedex[id].id %> - <%= pokedex[id].name %></h2>
                     <p><%= pokedex[id].desc %></p>
                     <p><b>Tipo:</b> <%= pokedex[id].type %></p>

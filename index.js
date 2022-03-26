@@ -8,20 +8,12 @@ let message = '';
 
 const menu = [
     {
-        title: 'INÍCIO',
+        title: 'ADICIONAR POKEMON',
         link: '/',
-    },
-    {
-        title: 'ADICIONAR POKÉMON',
-        link: '/add',
     },
     {
         title: 'POKEDEX',
         link: '/pokedex',
-    },
-    {
-        title: 'ABOUT',
-        link: '/about',
     },
 ];
 
@@ -120,15 +112,6 @@ app.get('/add', (req, res) => {
     }, 5000);
 });
 
-app.get('/pokedex', (req, res) => {
-    res.render('pokedex', { pokedex, menu});
-});
-
-app.get('/about', (req, res) => {
-    res.render('about', { pokedex, menu });
-});
-
-
 app.post('/create', (req, res) => {
     const pokemon = req.body;
     pokemon.id = pokedex.length + 1;
@@ -145,12 +128,8 @@ app.post('/create', (req, res) => {
 
 app.get("/detalhes/:id", (req, res) => {
     const id = req.params.id;
-    // res.render('detalhesp', { pokedex, menu, id });
-  });
-
-  app.get('/detalhesp', (req, res) => {
     res.render('detalhesp', { pokedex, menu, id });
-});
+  });
 
 
 app.get("/delete/:id", (req, res) => {

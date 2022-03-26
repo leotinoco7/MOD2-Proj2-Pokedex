@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/CSS/style.css" />
-        <title>Início</title>
+        <title>Pokédex</title>
     </head>
     <body>
         <header>
@@ -17,9 +17,22 @@
                 </div>
             </h1>
         </header>
-        <main><p class="title">Início</p></main>
-        <div id='imgContain'><img id="gifP" src="../img/pikachu.gif"></div> 
-      
+        <main>
+            <div><p class="title">Pokedex</p></div>
+            <section id="cards">
+                <% pokedex.forEach((pokemon) => { %>
+                <div class="card">
+                    <img src="<%= pokemon.image %>" alt="" />
+                    <h2><%= pokemon.id %> - <%= pokemon.name %></h2>
+                    <p><%= pokemon.desc %></p>
+                    <p><b>Tipo:</b> <%= pokemon.type %></p>
+                    <div class="padd"><a href="/detalhes/<%= pokedex.indexOf(pokemon) %>"><button id="btn2">- Apagar</button></div></a>
+                    <div class="padd"><a href="/delete/<%= pokedex.indexOf(pokemon) %>"><button id="btn2">- Apagar</button></div></a>
+                </div>
+                <% }) %>
+            </section>
+        </main>
+        <footer></footer>
         <script src="/js/script.js"></script>
     </body>
 </html>

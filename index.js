@@ -8,12 +8,12 @@ let message = '';
 
 const menu = [
     {
-        title: 'ADICIONAR POKEMON',
+        title: 'POKEDEX',
         link: '/',
     },
     {
-        title: 'POKEDEX',
-        link: '/pokedex',
+        title: 'ADICIONAR POKEMON',
+        link: '/add',
     },
 ];
 

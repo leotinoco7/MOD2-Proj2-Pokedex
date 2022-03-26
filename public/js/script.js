@@ -33,13 +33,7 @@ function processa(element,time,initial,end){
     }else {
              increment = -2;
     }
-
-
-
     opc = initial;
-
-
-
     intervalo = setInterval(function(){
              if((opc == end)){
                       if(end == 0){
@@ -53,8 +47,6 @@ function processa(element,time,initial,end){
              }
     },time * 10);
         }
-
-
         function Mudarestado(el) {
             var display = document.getElementById(el).style.display;
             var botao = document.getElementById("meuBotao");

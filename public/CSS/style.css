@@ -141,6 +141,7 @@ section#cadastro form label {
 }
 
 .title {
+  margin-top: 1rem;
   font-family: pokehollow;
   text-align: center;
   font-size: 3rem;

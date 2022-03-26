@@ -131,12 +131,11 @@ app.get("/detalhes/:id", (req, res) => {
     res.render('detalhesp', { pokedex, menu, id });
   });
 
-
 app.get("/delete/:id", (req, res) => {
     const id = req.params.id;
     delete pokedex[id];
 
-    res.redirect('../pokedex');
+   res.redirect('/');
   });
 
 

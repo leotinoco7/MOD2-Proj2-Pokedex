@@ -2,17 +2,12 @@
 
 ### Projeto Pokédex - WBC - Blue EdTech
 
-Pokédex desenvolvida utilizando o framework Express do Node.js.
-É possível cadastrar pokèmons de maneira local (client side) através da página
+Modelo de pokédex desenvolvida utilizando o framework Express do Node.JS, aonde é possível cadastrar infinitos pokémons além de ter a opção de mostrar suas informações detalhadamente. Foi implementado também um botão para apagar, caso haja algum erro.
+Todas as mudanças são client-side e não afetam o código de maneira permanente.
 
 ### 🔧 Deploy
 
 O deploy se encontra no Heroku e é possível acessá-lo <a href="https://mod2-proj-pokedex.herokuapp.com/" target="_blank">AQUI</a>
-
-
-## 📦 Desenvolvimento
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 ## 🛠️ Construído com
 

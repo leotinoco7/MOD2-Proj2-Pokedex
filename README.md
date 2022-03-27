@@ -1,4 +1,5 @@
 <img src="https://user-images.githubusercontent.com/95504029/151560441-2e792d97-fd65-462c-8fd7-70f581de5674.gif" width="100">
+
 ### Projeto Pokédex - WBC - Blue EdTech
 
 Pokédex desenvolvida utilizando o framework Express do Node.js.
@@ -6,7 +7,7 @@ Pokédex desenvolvida utilizando o framework Express do Node.js.
 
 ### 🔧 Deploy
 
-O deploy se encontra no Heroku e é possível acessá-lo <a href="https://mod2-proj-pokedex.herokuapp.com/" target="blank">AQUI</a>
+O deploy se encontra no Heroku e é possível acessá-lo <a href="https://mod2-proj-pokedex.herokuapp.com/" target="_blank">AQUI</a>
 
 
 ## 📦 Desenvolvimento

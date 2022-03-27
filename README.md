@@ -16,15 +16,15 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 ## 🛠️ Construído com
 
-* [Express](https://expressjs.com/) - Express
-* [NODE.js](https://nodejs.org/) - NODE.js
-* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - HTML5
-* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) - CSS
+* [Express](https://expressjs.com/)
+* [NODE.js](https://nodejs.org/)
+* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ## ✒️ Autores
 
 * **Leonardo Tinoco** - [LINKTREE](https://linktr.ee/leotinoco7)
-* **Pedro Henrique** - [fulanodetal]https://github.com/phcPedro)
+* **Pedro Henrique** - [GITHUB]https://github.com/phcPedro)
 
 ## 📄 Licença
 

@@ -24,7 +24,7 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 ## ✒️ Autores
 
 * **Leonardo Tinoco** - [LINKTREE](https://linktr.ee/leotinoco7)
-* **Pedro Henrique** - [GITHUB]https://github.com/phcPedro)
+* **Pedro Henrique** - [GITHUB](https://github.com/phcPedro)
 
 ## 📄 Licença
 

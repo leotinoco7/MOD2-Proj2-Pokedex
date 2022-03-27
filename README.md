@@ -4,8 +4,6 @@
 Pokédex desenvolvida utilizando o framework Express do Node.js.
 É possível cadastrar pokèmons de maneira local (client side) através da página
 
-```
-
 ### 🔧 Deploy
 
 O deploy se encontra no Heroku e é possível acessá-lo <a href="https://mod2-proj-pokedex.herokuapp.com/" target="blank">AQUI</a>
